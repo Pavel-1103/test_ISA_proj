@@ -69,4 +69,3 @@ def test_exit_from_account():
     finally:
         browser.quit()
         print("Browser quit")
-
