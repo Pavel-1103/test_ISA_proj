@@ -65,6 +65,9 @@ def test_exit_from_account():
         )
         time.sleep(10)
 
+        
+        item_account_button = browser.find_element(By.XPATH, "//a[@class='s-header__item-icon']//parent::div[@class='s-header__item -account']")
+        item_account_button.click()
         logout_button = browser.find_element(By.XPATH, "//a[@href='/ua/?logout=yes']")
         logout_button.click()
     finally:
