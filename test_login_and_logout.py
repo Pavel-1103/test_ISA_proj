@@ -40,8 +40,7 @@ def test_get_form_login():
 
 def test_exit_from_account():
     browser = webdriver.Chrome()
-    options = opts_chrome
-    options.add_argument('--start-maximized--')
+    browser.maximize_window
     browser.implicitly_wait(5)
 
     try:
